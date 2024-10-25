@@ -1,27 +1,9 @@
-let customFunction = function() {
-    alert("기본 함수입니다!");
-};
+ // 첫 번째 버튼에 대한 이벤트 리스너 추가
+ document.getElementById('btn1').addEventListener('click', function() {
+    alert('첫 번째 버튼이 눌렸습니다!');
+});
 
-// 기본 함수 실행
-customFunction();
-
-// JavaScript 코드 변경 함수
-function changeCode() {
-    // 변경할 코드 문자열
-    const newCode = `
-        customFunction = function() {
-            alert("변경된 함수입니다!");
-        };
-    `;
-    
-    // eval()을 사용하여 변경된 코드 실행
-    eval(newCode);
-}
-
-// 버튼 클릭 이벤트 리스너 추가
-document.getElementById('changeButton').addEventListener('click', changeCode);
-
-// 변경된 코드 실행 함수
-document.getElementById('executeButton').addEventListener('click', function() {
-    customFunction(); // 변경된 함수를 호출
+// 두 번째 버튼에 대한 이벤트 리스너 추가
+document.getElementById('btn2').addEventListener('click', function() {
+    alert('두 번째 버튼이 눌렸습니다!');
 });
